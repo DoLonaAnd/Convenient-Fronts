@@ -1,0 +1,160 @@
+.main-container {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-size: 25px;
+}
+
+html,
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #adb5bd;
+    background-color: #36393F;
+    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    /*background-blend-mode: darken;*/
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #272A2D;
+    position: fixed;
+    font-size: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    z-index: 100;
+}
+
+main {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+
+/* main下部が隠れてしまうため、埋め合わせする要素*/
+
+sub {
+    padding-top: 60px;
+    height: 600px;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: #272A2D;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    z-index: 100;
+}
+
+.tips {
+    text-align: center;
+    width: 90%;
+    margin-left: 5.0%;
+    margin-right: 5.0%;
+    border-radius: 5.0px;
+    background-color: #272A2D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.container {
+    padding: 1rem;
+}
+
+
+/* タブをまとめたdiv要素のStyle*/
+
+.tab-list {
+    border-bottom: 1px solid #adb5bd;
+    display: flex;
+    list-style: none;
+    margin: 0 0 0.5rem 0;
+    margin-left: 2.0%;
+    margin-right: 2.0%;
+    padding: 0;
+    object-fit: cover;
+    overflow-x: scroll;
+}
+
+
+/* タブのリストが横にはみ出た際のスクロールバーを非表示にする*/
+
+.tab-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* タブ一つ一つにかかかるCSS*/
+
+.tab-item {
+    border: 1px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 5.0px;
+    margin-left: 0.5rem;
+    padding: 0.75rem 1.0rem;
+    color: #adb5bd;
+}
+
+
+/* そのタブに対応する内容が表示されている際のタブのCSS*/
+
+.tab-item.is-open {
+    color: #272A2D;
+    background-color: #adb5bd;
+    animation: fadeIn 300ms ease-in-out forwards;
+}
+
+
+/* タブはa要素依存のため、補正するCSS*/
+
+.tab-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* タブに対応する内容を非表示にする*/
+
+.tab-content {
+    display: none;
+}
+
+
+/* タブに対応する内容が開かれているときに表示にする*/
+
+.tab-content.is-open {
+    display: block;
+    animation: fadeIn 300ms ease-in-out forwards;
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Convenient Fronts</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="jikoman">
+
+    </div>
+    <div class="main-container">
+        <header class="header">
+            <p>Convenient Fronts</p>
+        </header>
+        <main class="main">
+            <div id="tabs">
+                <h1>HTML, CSS, JavaScriptでのフロントエンドで使えるあれこれ</h1>
+                <h3>※随時更新</h3>
+                <div class="links">
+                    <a href="./style.css" target="_blank" rel="noopener noreferrer">Style Sheet</a><br>
+                    <a href="./script.js" target="_blank" rel="noopener noreferrer">Script</a>
+                </div>
+
+                <hr>
+
+                <h2>タブの使い方</h2>
+                <div class="tips">
+                    Nodeモジュール「micromodal」を使用。 目的のディレクトリ内で $ npm i micromodal を実行。<br><b>&lt;script src="./node_modules/micromodal/dist/micromodal.js"&gt;&lt;/script&gt;</b>を要素内に設置。
+                </div>
+                <!-- タブのリスト -->
+                <ul class="tab-list" id="tab-1">
+                    <li class="tab-item is-open">
+                        <a href="#tab_1" data-toggle>
+                            タブ1
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#tab_2" data-toggle>タブ2</a>
+                    </li>
+                    <!--li class="tab-item">
+                        <a href="#" data-toggle></a>
+                    </li-->
+                </ul>
+                <!-- タブに対応する内容 -->
+                <div class="tab-content is-open" id="tab_1">
+                    <p>ここはタブ1の表記スペース。</p>
+                </div>
+                <div class="tab-content" id="tab_2">
+                    <p>ここはタブ2の表記スペース。</p>
+                    <p>にゃ～ん。</p>
+                </div>
+                <!--div class="tab-content" id="">
+                </div-->
+            </div>
+
+            <hr>
+
+            <h3>kfi</h3>
+
+
+        </main>
+        <sub>
+
+        </sub>
+        <footer class="footer">
+            @DoLonaAnd
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./node_modules/micromodal/dist/micromodal.js"></script>
+</body>
+
+</html>
